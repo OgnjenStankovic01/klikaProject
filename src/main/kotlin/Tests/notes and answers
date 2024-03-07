@@ -1,0 +1,11 @@
+1. a method to read and a method to write to the logger factory to see if a pass is successful or failed,
+display should be and reading is. there's not a lot of methods to check the current states too,
+a method to check if it is passasble in both directions, method to see if anyone has passed and to get their UID.
+2. the backticks mentioned are there because of the exclusive keywords reserved for Java in Kotlin like "is" and
+to accomodate them, we can use the backtick to define Kotlin functions that ignore the reservations and dont ovverride
+them
+3. validTicketTest is the name of the class,(private val checkpointIdentity : CheckpointIdentity) is the primary
+constructor of the class and it declares an object checkpointIdentity with the type CheckpointIdentity and it's private
+meaning it can't be accessed outside of the class and must be returned via a get method. The : itself means that
+validTicketTests inherits or extends from the IntegrationTest class and the IntegrationTest inherits from
+BaseSentences
