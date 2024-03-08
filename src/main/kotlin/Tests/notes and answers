@@ -1,5 +1,6 @@
-1. a method to read and a method to write to the logger factory to see if a pass is successful or failed. there's not a lot of methods to check the current states too,
-a method to check if it is passable in both directions, method to see if anyone has passed and to get their UID.
+1. A method to read and a method to write to the logger factory to see if a pass is successful or failed.
+There's not a lot of methods to check the current states too,
+A method to check if it is passable in both directions, method to see if anyone has passed and to get their UID.
 2. The backticks are used for naming functions that are not of the standard names like "main" or "functionName",
 they are used for special cases such as these sentences to accomodate special characters, spaces and reserved keywords.
 3. InvalidTicketTest is the name of the class,(private val checkpointIdentity: CheckpointIdentity) is the primary

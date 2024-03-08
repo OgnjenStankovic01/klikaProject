@@ -15,7 +15,7 @@ class wrongSidePass(private val checkpointIdentity: CheckpointIdentity) : Integr
         venueController.withDevice(checkpointIdentity) {
             `barrier passability`(PassageDirection.DEFAULT) shouldBe false
             `current display content should eventually contain`(DEFAULT_HSH_IDLE_DISPLAY_CONTENT)
-            var utId= “SD09.24.201300000001”
+            val utId= "SD09.24.201300000001"
             `offer ticket`(createBarcodeDataCarrier(utId))
             `current display content should eventually contain`(DEFAULT_HSH_GRANT_ACCESS_DISPLAY_CONTENT)
             `barrier passability should stay`(true)

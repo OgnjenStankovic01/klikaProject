@@ -1,6 +1,6 @@
 package Tests
 
-class passThroughClosedBarrier(private val checkpointIdentity: CheckpointIdentity) : IntegrationTest<BaseSentences> {
+class PassThroughClosedBarrierTest(private val checkpointIdentity: CheckpointIdentity) : IntegrationTest<BaseSentences> {
     override suspend fun specifyTest(venueController: VenueIntegrationTestController<BaseSentences>) {
         venueController.withDevice(checkpointIdentity) {
             `barrier passability`(PassageDirection.DEFAULT) shouldBe false
